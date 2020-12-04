@@ -1,13 +1,14 @@
 import './App.css';
 import Login from './components/login';
 import Signup from './components/signup';
-import Home from './components/home'
-import NotFound from './components/notfound'
+import Home from './components/home';
+import NotFound from './components/notfound';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
+
 
 
 function App() {

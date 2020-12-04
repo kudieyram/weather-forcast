@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import config from './config';
 import axios from 'axios';
 import '../App.css'
+import {
+    Link,
+    useHistory,
+} from 'react-router-dom'
 
 const BASE = config.base
 const KEY = config.key
 
 
-function Home(){
+function SearchPage(){
 
     const [weather, setWeather] = useState(null)
 
@@ -38,6 +42,7 @@ function Home(){
                 console.log(info.data.current)
             })
         }
+
     }
 
 
@@ -122,7 +127,6 @@ function Home(){
             </button>
 
         </div>
-
     
     
 </form>
@@ -133,10 +137,10 @@ function Home(){
 <div className='displaybar'>
 
     <div 
-        className='location'>
-        {city} , {country}
+        className='location text-center'>
+        <h4> {city} , {country} </h4>
             
-    </div>   
+    </div>  
 
     <div 
         className='date'>
@@ -144,16 +148,17 @@ function Home(){
             
     </div> 
 
+    <div 
+        className='text-center'> 
+        {weather.current.observation_time}
+
+    </div>
+
+    
 </div>
 
 <div>
     <div className='weather-box'>
-
-        <div className='weather-box'>
-
-            <h3 className='text-center'> Time of Observation: {weather.current.observation_time}</h3>
-
-        </div>
 
         <div className='temp'> 
 
@@ -185,6 +190,12 @@ function Home(){
         
         </div>
 
+        <p 
+            className='text-center'> 
+            <h9> Want to Search Another Location? </h9>
+            <Link to ='/signup'>
+            Click Here</Link>
+        </p>
 
     </div>
 </div>
@@ -204,4 +215,4 @@ function Home(){
 }
 
      
-export default Home;
+export default SearchPage;
