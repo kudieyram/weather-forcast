@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.login-form {
+    width: 320px;
+    margin: 0px auto;
+    font-size: 15px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+   }
+  
+   .form{
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 50;
+   }
+  
+   .container{
+    background-image: url('./images/gp.jpg');
+    height: 680px;
+    margin: 500;
+    padding: 100;
+    display: table;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+   }
+  
+   .login-form{
+    margin-bottom: 15px;
+    background: #dddada;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .login-form h2 {
+    margin: 0 0 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .form-control, .btn {
+    min-height: 0px;
+    display: flex;
   }
-}
+  .btn {        
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .App{
+    border:2px;
+    padding: 0px;
+    background-image: url'./images/gp.jpg';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.4 ease-out;
+
+  }
+
+  .error-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  
+  .error-wrapper .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .error-wrapper .info {
+    font-size: 14px;
+  }
+  
+  .displaybar{
+    color: black;
+    font-size: 20px;
+    display: table;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px rgba(53, 53, 53, 0.5);
+    background: rgba(255, 255, 255, 0.52);
+    transition: 0.4s ease;
+    align-items: center;
+  }
+
