@@ -33,9 +33,9 @@ import {
       <a 
         className="home-btn info">
         <Link to="/">
-          Go Home</Link>
+          Go to Login Page</Link>
       </a>
-      
+
         </div>
       </div>
       </div>

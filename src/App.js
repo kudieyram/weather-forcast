@@ -1,13 +1,13 @@
 import './App.css';
 import Login from './components/login';
 import Signup from './components/signup';
-import Home from './components/home';
 import NotFound from './components/notfound';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
+import SearchPage from './components/searchpage';
 
 
 
@@ -23,7 +23,9 @@ function App() {
 
           <Route path="/signup"><Signup/></Route>
 
-          <Route path="/dashboard"><Home/></Route>
+          <Route path="/search"><SearchPage/></Route>
+
+          {/* <Route path="/dashboard"><Home/></Route> */}
 
           <Route exact path="/"><Login/></Route>
 

@@ -31,7 +31,7 @@ function Login() {
             return
         }
 
-        routeHistory.push('./dashboard')    
+        routeHistory.push('./search')    
     }
 
 
@@ -40,7 +40,7 @@ function Login() {
         <div className= 'container'>
             <div className='login-form'>
                 <form>
-                    <h2 className='text-center'>Log In</h2>
+                    <h4 className='text-center'>Log In</h4>
                    
                    <div className='form-group'>
                         <input

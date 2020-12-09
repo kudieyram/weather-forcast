@@ -15,7 +15,7 @@
    }
   
    .container{
-    background-image: url('./images/gp.jpg');
+    background-image: url('./images/wp.jpeg');
     height: 680px;
     margin: 500;
     padding: 100;
@@ -140,4 +140,8 @@
     height: 100px;
     width: 118px;
     margin-bottom: 16px;
+  }
+
+  .date{
+    display: inline-block;
   }
